@@ -1,0 +1,18 @@
+.page{display:flex;min-height:100vh;align-items:center;justify-content:center;padding:28px;background:linear-gradient(180deg,#f8fbff,#fff)}
+.card{background:#fff;border-radius:14px;padding:28px;max-width:720px;width:100%;box-shadow:0 8px 24px rgba(2,6,23,0.08);text-align:center}
+.heart{width:64px;height:64px;margin-bottom:10px}
+.apologyImg{width:120px;height:120px;object-fit:contain;border-radius:8px;margin-bottom:8px}
+.title{font-size:26px;margin:0;color:#111}
+.subtitle{margin:8px 0 18px;color:#6b7280}
+.controls{display:flex;gap:12px;justify-content:center;align-items:center;min-height:56px}
+.accept{padding:12px 18px;border-radius:10px;border:0;background:linear-gradient(90deg,#ff6b6b,#ff8b8b);color:#fff;font-weight:600;cursor:pointer}
+.reject{padding:12px 18px;border-radius:10px;border:1px solid #e5e7eb;background:#f3f4f6;cursor:pointer}
+.tip{margin-top:12px;color:#6b7280;font-size:13px}
+.modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(2,6,23,0.5)}
+.modalInner{background:#fff;padding:22px;border-radius:12px;max-width:420px;text-align:center;box-shadow:0 12px 40px rgba(2,6,23,0.3)}
+.close{margin-top:12px;padding:10px 14px;border-radius:8px;border:0;background:#7c3aed;color:#fff;cursor:pointer}
+
+@media (max-width:480px){
+  .controls{flex-direction:column}
+  .accept,.reject{width:100%}
+}
