@@ -6,7 +6,7 @@ import styles from './styles.module.css'
 const deliverySteps = [
   {
     title: '사과 접수',
-    detail: '내가 잘못한 마음부터 제대로 확인했어.',
+    detail: '또 실수가 반복되어서 아영이한테 상처 준 거 정말 미안해..',
   },
   {
     title: '보고싶음 포장',
