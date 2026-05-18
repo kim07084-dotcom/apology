@@ -48,6 +48,7 @@ coverage/
 # Misc caches
 .cache/
 .pnp.*
+.tools/
 
 # Optional: ignore local debug or OS-specific files
 *.local
