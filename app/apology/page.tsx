@@ -35,6 +35,8 @@ const letterLines = [
   '너무 보고싶고, 앞으로는 아영이 마음을 더 먼저 생각하면서 잘할게.',
 ]
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? ''
+
 export default function Apology() {
   const rejectRef = useRef<HTMLButtonElement | null>(null)
   const containerRef = useRef<HTMLDivElement | null>(null)
@@ -114,7 +116,7 @@ export default function Apology() {
       <section className={styles.card} ref={containerRef} aria-label="사과 마음 배송">
         <div className={styles.photoWrap}>
           <img
-            src="/images/apology.png"
+            src={`${basePath}/images/apology.png`}
             alt="미안한 마음을 담은 그림"
             className={styles.apologyImg}
             onError={(event) => {
